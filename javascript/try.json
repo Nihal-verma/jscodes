@@ -1,0 +1,58 @@
+{
+    "student": [
+        {
+            "name": "nihal verma",
+            "age": "23",
+            "contact_no": 456123,
+            "lang": [
+                "js",
+                "html",
+                "css"
+            ]
+        },
+        {
+            "name": "arya mishra",
+            "age": "23",
+            "contact_no": 4561255,
+            "lang": [
+                "ux",
+                "ui",
+                "html",
+                "css"
+            ]
+        },
+        {
+            "name": "puru",
+            "age": "24",
+            "contact_no": 456124,
+            "lang": [
+                "js",
+                "html",
+                "css"
+            ]
+        },
+        {
+            "name": "ravi jain",
+            "age": "25",
+            "contact_no": 456126,
+            "lang": [
+                "js",
+                "html",
+                "css",
+                "sql"
+            ]
+        },
+        {
+            "name": "adarsh",
+            "age": "25",
+            "contact_no": 4456126,
+            "lang": [
+                "python",
+                "js",
+                "html",
+                "css",
+                "sql"
+            ]
+        }
+    ]
+}

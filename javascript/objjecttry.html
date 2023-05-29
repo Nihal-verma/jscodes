@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = new Object()
+        person.name = "Nihal verma"
+        person.age = 25
+        console.log(person);
+        let datee = new Date()
+        let time = datee.getHours()
+        if (time >= 12.00 && time <= 16.00) {
+            console.log("good afternoon");
+        } else if (time >= 17 && time <= 21) {
+            console.log("good evening");
+        } else if (time >= 22 || time <= 3) {
+            console.log("good night");
+        } else {
+            console.log("good morning");
+        }
+        console.log(time);
+
+    </script>
+</body>
+
+</html>

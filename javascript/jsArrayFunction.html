@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array function</title>
+
+</head>
+<body>
+<script>
+     let x=[10,85,557,79,90,79,800]
+  x.forEach ((v)=>{
+         document.write(v + "<br>")
+     })
+    
+//  x.map(v)
+//  function v (t){
+//     document.write(t*2 + "<br>")
+//  }
+/*let y= x.filter(function(adult){
+     document.write(adult%2==0);
+ })
+ document.write(x + "<br>")
+document.write(y + "<br>")
+  */  
+//  function above(o){
+//     return ( o >=70);
+//  }
+//  let y = x.filter(above);
+//  document.write(y)
+/*et y= x.map(even,index);
+function even(a){
+    return(a*2 , index);
+}
+document.write(x + "<br>") + "<br>";
+document.write(y + "<br>");*/
+let y = x.find(above)
+function above(a){
+    return a>100;
+}
+let t= x.findIndex(ind)
+function ind(a){
+    return a>100;}
+document.write(t + "<br>");
+var v = x.lastIndexOf(79);
+document.write(v)
+var yy=x.includes(90)
+document.write(yy )
+// console.log(y);
+
+</script>    
+</body>
+</html>

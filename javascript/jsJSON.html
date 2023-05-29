@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json</title>
+</head>
+
+<body>
+    <h1>converting object into json</h1>
+    <script>
+      let x={
+    "student": [
+        {
+            "name": "nihal verma",
+            "age": "23",
+            "contact_no": 456123,
+            "lang": [
+                "js",
+                "html",
+                "css"
+            ]
+        },
+        {
+            "name": "arya mishra",
+            "age": "23",
+            "contact_no": 4561255,
+            "lang": [
+                "ux",
+                "ui",
+                "html",
+                "css"
+            ]
+        },
+        {
+            "name": "puru",
+            "age": "24",
+            "contact_no": 456124,
+            "lang": [
+                "js",
+                "html",
+                "css"
+            ]
+        },
+        {
+            "name": "ravi jain",
+            "age": "25",
+            "contact_no": 456126,
+            "lang": [
+                "js",
+                "html",
+                "css",
+                "sql"
+            ]
+        }
+    ]
+}
+let y=JSON.stringify(x)
+
+console.log;
+// console.log(x.student[0].lang[1]);
+       
+    </script>
+
+</body>
+
+</html>

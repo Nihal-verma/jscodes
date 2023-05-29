@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body><script>
+    // using length property for knowing the length of string
+    let x="nihal"
+    let y=x.length;
+   
+    // using single slash with quote can actually avoid quote just like python
+    // x=" the character is \\\\ backlash";
+    // console.log(x)
+    // y="hello  world"
+    // document.write(y);
+    // string slicing
+    var a="this,is,a,string,whichis,about,to,slice"
+    //var b=a.slice(-1)  it will strat from the end of the string
+   // var b=a.substring(4,10)// run from index 4 to 10
+   // var b=a.substr(4,10) //run from 4 to 10 index
+   //var b=a.trim() only remove extra spaces
+//    var b=a.charAt(1) provides the value of index 1
+//    var b=a.charCodeAt(1) provides unicode of index 1
+   //var b=a[2] //property acess from index
+//    var b=a.split( ",")
+//     document.write(b);
+//---------------------------------------------------------------------string template-------------------------------------------------------
+//var a = "is a coder"
+//var b = `nihal      ${a}` // it will add nihal in the starting of the string
+//var b=`${a} nihal` // add nihal in end of the string
+//console.log(b)
+var t="nihal"
+var f="verma"
+var ww= t.concat(f)
+document.write(ww +"<br>")
+function name(){
+    document.write("nihal");
+}
+name()+"<br>";
+var yy=t.split()
+document.write(yy)
+document.write(typeof yy + "<br>")
+document.write(Array.isArray(yy)) + "<br>"
+instanceof(yy)
+</script>
+    
+</body>
+</html>

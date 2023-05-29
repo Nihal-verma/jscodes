@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMevents</title>
+</head>
+<body>
+    <button id="btn" onclick="ale()">click me</button>      this is inline event<br><br><br><br><br><br>
+   <button id="btnn">click me 1</button>
+   <h1>hello</h1>
+   <h1>welcome</h1>
+    
+    <script>
+        function ale() {
+            alert("button has been clicked")
+        }
+        function ale1() {
+            alert("button has been clicked & this button is using addeventlistener ")
+        }
+        
+        let btnn=document.querySelector("#btnn")
+        btnn.addEventListener('click',ale1)
+        let h = document.querySelectorAll("h1")[0].style.color="red"
+
+        // let num =4
+        // let x
+        // (num%2==0)? x="even":x="odd"
+        // console.log(x);
+    </script>
+</body>
+</html>

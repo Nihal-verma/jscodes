@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+
+<body>
+    <script>
+        // function hello() {
+        //     console.log("hello...... people");
+        //     console.log("this is hello function using as call back function ");
+        // }
+        // function addition(a, b, c) {
+        //     console.log(a+b);
+        //     c();
+
+        // }
+        // let x = 10
+        // let y = 50
+        // addition(x, y, hello);
+
+        function sum(a, b, c, d, e) {
+            var marks = a + b + c + d + e
+            //console.log( marks);
+            return marks
+        }
+        function per(add, total_marks) {
+            let percent = add(100,100,100,100,100) / total_marks * 100
+            console.log(percent);
+
+        }
+        // let eng = 75
+        // let hin = 70
+        // let math = 44
+        // let phy = 70
+        // let chem = 55
+         let total = 500
+       // sum(eng, hin, math, phy, chem)
+        per(sum, total)
+        
+
+    </script>
+
+</body>
+
+</html>

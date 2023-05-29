@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+         let x=[10,20,30,40,50];
+        // x[7]=35;
+       // let x = ["Nihal","Puru","Ravi","Arya","Time"];
+        // let y=x[x.length-1];
+        //let ary = new Array(10,20,30);
+        //document.write(ary +"<br>")
+        //document.write(typeof ary +"<br>")
+        // x.pop(30);
+        //document.write(y + "<br>");
+        // document.write(y + "<br>")
+        // document.write(x.length -1 + "<br>");
+        //document.write(y.length)
+        //let y=x.slice(1,4);  // slice (starting index,ending index)
+    //    x.splice(1,0,"verma");
+    //    x.shift()
+    //    x.unshift("nihal")
+    //  let y=x.sort()
+   // let y = x.reverse()
+   
+//    function myArrays(arr){
+//     return Math.max(arr);
+//    }
+//    document.write(myArrays(x));
+    // x.forEach(function(val,index,x){
+    //   document.write(index + " : "+ x + " " + val + "<br><br>");
+    // })
+    // x.unshift(55);
+    x.splice(3,0,35);
+    document.write(x + " <br> ")
+    var y = x.map(mult)
+    function mult(z){
+        return (z*2)/10 *100;
+    }
+    document.write(y);
+
+    
+    //    let y = x;
+        
+    </script>
+    
+</body>
+</html>

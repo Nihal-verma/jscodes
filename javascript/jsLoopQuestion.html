@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question</title>
+</head>
+
+<body>
+    <h1>question</h1>
+    <!-----------------------------------------------------------------reverse pattern---------------------------------------------------------------------------------------->
+    <script>
+        var num = 10
+
+        for (var a = num; a > 0; a--) {
+
+            for (var b = a; b > 0; b--) {
+                document.write("#" + " ")
+            }
+            document.write("<br>")
+
+        }
+
+
+
+    </script>
+    <hr>
+    <!------------------------------------------------------------reversing the pattern------------------------------------------------------------------------->
+    <script>
+        var num = 10
+
+        for (var a = 1; a <= num; a++) {
+
+            for (var b = 1; b <= a; b++) {
+                document.write(b + " ")
+            }
+            document.write("<br>")
+
+        }
+
+
+    </script>
+    <hr>
+    <!----------------------------------------------------------------printing 1 one time 2 two times 3 three times---------------------------------------------------->
+    <script>
+        var num = 10
+
+        for (var a = 1; a <= num; a++) {
+
+            for (var b = 1; b <= a; b++) {
+                document.write(a + " ")
+            }
+            document.write("<br>")
+
+        }
+
+    </script>
+    <hr>
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <script>
+        var num = 5
+        for (var a = 1; a <= num; a++) {
+            for (var b = 1; b <= a; b++) {
+                document.write(b + "")
+
+            }
+
+            document.write("<br>")
+        }
+    </script>
+    <hr>
+    <!----------------------------------------------------------------------------finding smaller value------------------------------------------------------------------->
+    <script>
+        var x = 150, y = 100, z = 30;
+        if (x < z && x < y) {
+            document.write("x is smaller")
+        } else if (y < x && y < z) {
+            document.write("y is smaller")
+        } else if (z < x && z < y) {
+            document.write("z is smaller")
+        }
+    </script>
+    <hr>
+    <!------------------------------------------------------------------------------arranging in ascending order--------------------------------------------------------------->
+    <script>
+        var x = 100, y = 5, z = 3;
+        if (x < y && x < z) {
+            if (y < z) {
+                document.write("x < y < z")
+
+            } else {
+                document.write("x < z < y")
+            }
+        } else if (y < x && y < z) {
+            if (x < z) {
+                document.write("y < x < z")
+            } else {
+                document.write("y < z < x")
+            }
+        } else if (z < x && z < y) {
+            if (x < y) {
+                document.write("z < x < y")
+            } else {
+                document.write("z < y < x")
+            }
+        }
+
+    </script>
+    <hr>
+    <!---------------------------------------------------------------to sort array in ascending order--------------------------------------------------------->
+    <script>
+        var x = [100, 300, 5, 2]
+        var y = []
+        for (var i = 1; i < x.length; i++) {
+            for (var b = 0; b < i; b++) {
+                if (x[i] < x[b]) {
+                    var z = x[i]; // swaping is used
+                    x[i] = x[b];
+                    x[b] = z;
+                }
+
+
+            }
+
+        } y.push(x)
+
+        document.write(y) 
+    </script>
+    <hr>
+    <!----------------------------------------------------------------to sort array in decending order----------------------------------------------------------->
+    <script>
+        var x = [5, 55, 99, 88]
+        for (var a = 1; a < x.length; a++) {
+            for (var b = 0; b < a; b++) {
+                if (x[b] < x[a]) {
+                    var c = x[b];
+                    x[b] = x[a];
+                    x[a] = c;
+                }
+            }
+        }
+        document.write(x)
+    </script>
+    <hr>
+    <!----------------------------------------------------------------to add array on index--------------------------------------------------------------------->
+    <script>
+        let xx = [14, 13, 2, 5, 30]
+        let zz = [] //for adding array
+        let tt = []// for ascending order
+        for (var a = 0; a < xx.length; a++) {
+            let yy = 0
+            for (var b = 0; b < xx.length; b++) {
+                if (a === b) {
+                    continue;
+                }
+                else {
+                    yy = yy+ xx[b];
+                }
+
+            }
+            zz.push(yy);
+        }
+        document.write(zz + "<br>")// arranging in assending order//
+
+        for (var a = 1; a < zz.length; a++) {
+            for (var b = 0; b < a; b++) {
+                if (zz[b] > zz[a]) {
+                    var c = zz[b]
+                    zz[b] = zz[a]
+                    zz[a] = c;
+                }
+            }
+        }
+        tt.push(zz)
+        document.write("hhhh>>>",tt)
+
+    </script>
+    <hr>
+    <!-------------------------------------------------------------------------------------pattern---------------------------------------------------->
+    <script>
+        for(var a=1;a<=5;a++){
+           for(var b=5;b>a;b--){
+            document.write("&nbsp;&nbsp;")
+           }
+           for(var c=1;c<=a;c++){
+            document.write("*")
+           }
+           for(var d=1;d<a;d++){
+            document.write("*")
+           }
+           document.write("<br>")
+        }
+    </script>
+    <!-- <button><a href="https://sliceledger.io/">up on sliceledger</a></button> -->
+    <script>
+        let array=[5,-9,1,3]
+        let so=array.sort(function(a,b){return b-a})
+        document.write(so)
+    </script>
+
+</body>
+
+</html>

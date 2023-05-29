@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=[1,2,3,4,5,6]
+        x[0]=45
+        console.log(x);
+        var x = 5
+        var fact = 1
+        for (var i = 1; i <= x; i++) {
+            fact = fact * i
+
+        }
+        document.write(fact)
+    </script>
+    <hr>
+    <!----------------------------------------------------------------------------------------------for in loop--------------------------------->
+    <script>
+
+        let xx={
+            Name: "Nihal", 
+            Section: 3,
+            Language: "J.S",
+            Device:{laptop:"asus",
+            mobile: "realme",
+            watch:"fasttrack",
+            tv:"crown"}
+        }
+        for(var key in xx){
+            console.log(key, xx[key]);
+        }
+        for(var k in xx.Device){
+            console.log( k, xx.Device[k]);
+            
+        }
+    
+    </script>
+</body>
+</html>

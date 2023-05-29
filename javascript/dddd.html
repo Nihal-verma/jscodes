@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event listener</title>
+</head>
+<body>
+    <!----<input type="text" name="fname">-->
+    <h1 id="heading">this is heading</h1>
+    <button id="noob">submit</button>
+    <h2 onclick="this.innerHTML='hellllooo'">click on the text</h2>
+    <div id="parent">parent
+    <p id="child">child</p>
+    <p>child</p>
+    </div>
+<script>
+    
+    function hello(){
+        document.write("helloooooo!!!")
+    }
+    let button=document.getElementById("noob")
+    let heading=document.getElementById("heading")
+    button.addEventListener("click",function(){
+        heading.style.backgroundColor="yellow"
+        heading.style.color="red"
+    })
+        let ddate=()=>{
+            let x=new Date()
+            console.log(x.getFullYear());
+        }
+        ddate()
+        let x=new Date()
+       let y= x.getFullYear()
+        console.log(y);
+    let c = document.getElementById('child')
+    let p = c.parentElement;
+    console.log(p);
+    let parent=document.getElementById('parent')
+    //let child=parent.children[0]
+    let child=parent.firstElementChild // this both will select the first child of the parent
+    let lastchild=parent.lastElementChild//this will select the last child of the parent
+    let allchild=parent.children
+    console.log(allchild);
+    //console.log(child);
+    //console.log(lastchild);
+    // for fetching entire data of html inner HTML is used
+    let data=document.getElementById("parent")
+    let cont=data.innerHTML
+    console.log(cont); // this will provide the entire content of html
+    data.innerHTML="hello"// this will change the content
+    console.log(data);
+
+
+
+</script>
+</body>
+</html>

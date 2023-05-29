@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class form_parent {
+            constructor(name,age) {
+                this.name = name
+                this.age=age
+            }
+            fullname() {
+                console.log(`your name is ${this.name}`);
+            }
+            Age() {
+                console.log(`your age is ${this.age}`);
+            }
+            address(adde){
+                console.log(`your address is ${ adde}`);
+            }
+        }
+
+        let nihalform = new form_parent("nihal verma",23)
+        nihalform.fullname();
+        nihalform.address("190 b brijeshwari nx b")
+
+        // creating new child class which is going to take property of parent class
+
+        class form_child extends form_parent {
+            cont(num){
+                this.num=num
+                console.log("your contact number is " + this.num);
+            }
+           static Email(mail){
+                this.email=mail
+                console.log("your email ID is " + this.email);
+            }
+            sum(a,b){
+                this.number1=a
+                this.number2=b
+                console.log(`the sum of the given number is `  + (a+b));
+
+            }
+            address(aa){
+                super.address(aa)
+            }
+        }
+
+        let names = new form_child("nihal verma",23)
+        names.fullname()
+        names.cont(789)
+        form_child.Email("nihal.verma@gmail.com")
+        names.sum(9,5)
+        names.address(455)
+        
+        
+    </script>
+
+</body>
+
+</html>

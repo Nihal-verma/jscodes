@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body><script>
+    // let x=10
+    // let y="100"
+    // let z=x/y //it will give answer because JS covert string into number during numeric expression
+    // document.write(z)
+    // let x=50.756;
+    // x=x.toFixed(2)
+//    let x= parseFloat("10.335")
+//     document.write(typeof x) +"<br>"
+//     document.write( x)
+    //  let x=Number.parseFloat(77778878.7878787878)
+//     let x=Number.EPSILON;
+//      document.write(x)
+// </script>
+// <hr>
+// <script>
+//     let yy="200"
+//     let xx=Number(yy)
+//     document.write(xx)
+//     document.write(typeof xx)
+// </script>
+<script>
+    let x=[1,1,2,2,2,3,3,3,3,4,4,4,4,4,4,4,4,4]
+    let y=[1,2,3,4]
+    let zz=1
+    let value
+ 
+    
+    for ( let a=0;a<x.length;a++){
+        var z=0
+        for(let b=0;b<x.length;b++){
+            if(x[a]==x[b]){
+                z++
+            }
+            if(z<=zz){
+                zz=z
+             value=x[a]
+            }
+        }
+           
+       
+    }document.write(value + "<br>")
+
+</script>
+    
+</body>
+</html>

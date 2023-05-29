@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        document.write(d + "<br>");
+        var a = new Date("2023-01-21")  // give date as a string
+        document.write(a + "<br>");
+        var b = new Date(2022,01,21,02,40,50);// give date in order year month day hour min sec mili
+        document.write(b + "<br>");
+        var c= Date.parse("2023-01-21");//date.parse() converts string into milisecond;
+        document.write(c + " <br>")
+        var e = new Date(c)   //convert milisecond into date
+        document.write(e + " <br>")
+        var f = d.toDateString(); // give  date in more readable format
+        document.write(f + " <br>")
+        var g = new Date("2023-13-21")  // return invalid date 
+        document.write(g + "<br>")
+        //-----------------------------------------------------------------------------get method-----------------------------------------------------------------
+        var h = d.getDate() // give date
+        document.write(h + "<br>");
+        var i = d.getDay()   //give day
+        document.write(i + "<br>");
+        var j =d.getFullYear() //give year
+        document.write(j + "<br>");
+        var k=d.getHours() // give hour
+        document.write(k + "<br>");
+        var l=d.getMilliseconds()
+        document.write(l + "<br>");
+        var m=d.getMinutes()
+        document.write(m + "<br>");
+        var n=d.getMonth() // give month in number like jan in 0
+        document.write(n + "<br>");
+        var o=d.getSeconds()
+        document.write( o + "<br>");
+        var p=d.getTime()
+        document.write(p + "<br>");
+        var q=d.getTimezoneOffset()
+        document.write(q + "<br>");
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <ul>
+        <li id="first" style="border: 2px solid black;">list1</li>
+        <li class="cl">list2</li>
+        <li class="cl">list3</li>
+    </ul>
+    <div class="parent">this is a div
+        <h1 class="child">heading1</h1>
+        <h3>this is my sub heading</h3>
+    </div>
+
+    <h2>heading2</h2>
+    <h3>heading3</h3>
+    <p>paragraph tag</p>
+    <ul id="insertBefore">
+        <li>coffee</li>
+        <li>cold drink</li>
+        <li>tea</li>
+    </ul>
+
+    <script>
+        let element = document.getElementById("first");
+        element.attributes.style
+        console.log(element);
+        let demo = document.getElementsByTagName("h1")
+        console.log(demo);
+
+        //-------------------------------------------------------------------------using parentNode-------------------------------------
+
+        // let par = document.querySelector(".child") // first select child node
+        // // let para = // then use parentNode to get the parent of the child
+        // console.log(par.parentNode);
+
+        // //-------------------------------------------------------------------------using childrenNode--------------------------------
+
+        // let paren = document.querySelector(".parent")
+        // //let childd=
+        // console.log(paren.childNodes);
+        // //=-------------------------------------------------------------------------using nextElementsibling--------------------------------------
+
+        // let x = document.querySelector(".child")
+        // console.log(x.nextElementSibling);// gives information about sibling 
+
+        // //--------------------------------------------------------------------------using previousElementsibling--------------------------------
+
+        let yyy = document.querySelector("h3");
+        yyy.style.color = 'red';
+        
+    
+        //console.log(y.previousElementSibling);
+        // console.log(yyy);//gives info about previous sibling
+
+
+        // //--------------------------------------------------------------------MANIPULATION-----------------------------------------------------
+
+        // let mani=document.querySelector(".parent")
+        // mani.innerHTML="heloo this is div" // changing content of html using inner html
+        // mani.style.color='red' // changing color
+
+        //-------------------------------------------------------------------------adding classs-------------------
+    //     let classAdd = document.querySelector(".child")
+    //     console.log(classAdd);
+    //     classAdd.classList.add('one');       // using classlist.add property to add class
+
+    //     //----------------------------------------------------------------------------removing class-------------------------------------------------------
+    //     let classRemove = document.querySelector('.child')
+    //     classRemove.classList.remove('one')   // removed the previously added class
+
+    //     /////-----------------------------------------------------------------adding element-----------------------------------------------------------------------
+
+    //     let x = document.createElement('h1')
+    //     x.innerHTML = "hello heading in h4"
+    //     x.classList.add('hhh')
+    //     let y = document.querySelector('.parent')
+    //     y.appendChild(x)
+    //     let xx = document.createElement('p')
+    //     xx.innerHTML = "hello this is newly added para"
+    //     xx.classList.add('ppp')
+    //     let yy = document.querySelector('.parent')
+    //     yy.appendChild(xx)     // it will append means add in the end
+    //     //--------------------------------------------------------------------------for adding any thing before we use insert before()
+    //     let n = document.createElement("li"); // creating an element
+    //     let o = document.createTextNode("water");//creating content of an element
+    //     n.appendChild(o);
+    //    let  p = document.getElementById("insertBefore"); // building a connection for connecting the content to html
+    //     p.insertBefore(n, p.children[1]); // inserting element 'n' in "p's" child at 2nd position by using index number 
+        
+
+    </script>
+
+</body>
+
+</html>

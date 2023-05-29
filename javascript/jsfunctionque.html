@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+
+
+</head>
+
+<body>
+    <script>
+        // //---------------------------------------------------------------Question number 1-------------------------------------------------------------------------
+        // function hello() {
+        //     document.write("Hello World" + " <br> ")
+
+        // }
+        // hello();
+        // //---------------------------------------------------------------Question number 2-------------------------------------------------------------------------
+        // let x = 10
+        // function sq(a) {
+        //     document.write(a ** 2 + " <br>")
+        // }
+        // sq(x)
+        // //---------------------------------------------------------------Question number 3-------------------------------------------------------------------------
+        // let a = 55
+        // function ctf(c) {
+        //     return ((c * 9 / 5) + 32 + " " + "F")
+        // }
+        // console.log(ctf(a));
+        // //---------------------------------------------------------------Question number 4-------------------------------------------------------------------------
+        // let xx = 55, yy = 65
+        // function AR(a, b) {
+        //     return a * b
+        // }
+        // console.log(AR(xx, yy))
+        //---------------------------------------------------------------Question number 5-------------------------------------------------------------------------
+        function Circumference_area(x) {
+
+            let Circumference = 2 * 22 / 7 * x
+            let area = 22 / 7 * x * x
+         let circumarea= ("Circumference of circle having radius " + "  " + x+" "+ "is" +" : " + Circumference +" <br>"+ " " +"Area of circle having radius"+ " " +x+ " " +"is "+ " "  +":"+ " " + area )
+         return {Circumference,area}// for returning multiple value using object{}
+
+        }
+        let r = 55
+      
+        console.log(Circumference_area(r));
+        //----------------------------------------------------------------------Question number 6-------------------------------------------------------------------------
+    //     let strr = prompt("enter a string" + "  ")
+    //     var nn = strr.length
+    //     strr=strr.toLowerCase()
+    //     // console.log(strr);
+
+    //     function vowel(str) {
+          
+    //         var count = 0;
+    //         for (let x = 0; x < nn; x++) {
+                
+    //             if (str[x] == 'a' || str[x] == 'e' || str[x] == 'i' || str[x] == 'o' || str[x] == 'u') {
+    //                 count++
+    //             }
+    //         }   
+    //         return count
+    //     }
+    
+    // document.write(vowel(strr))
+    //------------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+    // for (let a=0;a<arr.length;a++){
+    //     document.write(arr[a]+"<br>")
+    // }
+//     let arr=[1,2,3]
+//   arr.forEach(function(a,b){
+//     document.write(b + " = " + a + "<br>")
+//    });
+    // let arr=['nihal','arya','puru','ravi']
+    // var brr=[]   
+    // brr=arr.map((val)=>{
+    //    return "hello"+" "+val
+    // });
+    // console.log(arr)
+    // console.log(brr)
+    // </script>
+    // <hr>
+    // <script>
+    //     let n=[45,55,100]
+    //     let yy=0
+    //     for(let aa=0;aa<n.length;aa++){
+    //         yy+=n[aa]
+    //     }
+    //     document.write(yy)
+    // </script>
+    <hr>
+    <!-- <script>
+    var n=1234
+        let y=" "
+        n=n+""
+        let b=n.length
+        for(let x=b-1;x<=0;x--){
+            let z=n[x]
+            y.concat(z)
+        }
+        console.log( y);
+    </script> -->
+    <script>
+        // let a="nihal"
+        // let b="verma"
+        // let c= a.concat(b)
+        // console.log(c);
+        let x= ['javascript','html','css','mongodb','node-js']
+        // let y= new Set(x)
+        // let z=Array.from(y)
+        // console.log(y);
+        // console.log(z);
+        // console.log(x.values(3));
+        let y=new Map([["language",x],["Name","nihal"]])
+        y.set("key1","value1")
+    //    let yy= y.get("Name")
+    let yy=y.forEach(element => {
+        console.log(y.entries("key1"))
+        
+    });
+   
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getter</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            firstName: "Nihal",
+            lastName: "verma",
+            age: 23,
+            language: "JS",
+            get getfullname() {
+                return this.firstName + this.lastName;
+            },
+            set change_age(num) {
+                this.age = num;
+            },
+
+
+        }
+        Object.defineProperty(student, "lang_age", {
+            get: function () {
+                return this.language + " " + this.age
+            }
+        })
+        Object.defineProperty(student, "change_language", {
+            set: function (new_value) {
+                this.language = new_value;
+            }
+        })
+       
+        console.log(student.lang_age);
+        console.log(student.getfullname);
+        console.log(student.age);
+        student.change_age = 24
+        console.log(student.age);
+        student.change_language = "python"
+        console.log(student.language);
+    </script>
+</body>
+
+</html>

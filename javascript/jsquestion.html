@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques</title>
+</head>
+
+<body>
+    <script>
+
+        // {
+        //     let price = prompt("Please enter the price", 00);
+        //     let Price = parseFloat(price)
+        //     let discount = prompt("Please enter the discount", 00);
+        //     let Discount = parseFloat(discount)
+        //     let DiscountedPrice = Price * Discount / 100
+        //     let DP = parseFloat(DiscountedPrice)
+        //     console.log(Number(DP));
+        //     console.log(Number(Price));
+        //     let final = Number(Price) - Number(DP) 
+        //     document.write("Price after discount is" + ": " + final + "<br>")
+        //     document.write("The discounted amount is" + "&nbsp;"+":" + DP)
+        // }
+    </script>
+    <hr>
+    <script>
+
+        // let price = 500
+        // let discount = 20.55
+        // let DiscountedPrice = price * discount / 100
+        // document.write(price - DiscountedPrice);
+
+    </script>
+    <hr>
+    <!-------------------------------------------------------------------removing duplictates----------------------------------------------------------------------------->
+    <script>
+        let x = [1, 2, 5, 5, 6, 7, 5, 7, 7, 5, 5, 7, 1, 1, 2]
+        document.write(x + "<br>")
+        let y = []
+        //--------------------------------------------------------------------------sorting------------------------------------------------------------------------------//
+        for (var a = 1; a < x.length; a++) {
+            for (var b = 0; b < a; b++) {
+                if (x[a] < x[b]) {
+                    let z = x[a];
+                    x[a] = x[b];
+                    x[b] = z;
+                }
+
+
+            }
+        } document.write(x + "<br>")
+        //-------------------------------------------------------------------------------------------removal---------------------------------------------------//
+        let zz
+        for (let i = 0; i < x.length; i++) {
+            if (x[i] !== zz) {
+                zz = x[i];
+                y.push(zz);
+
+            }
+        } document.write(y + "<br>")
+        document.write(zz)
+
+    </script> 
+    <hr>
+    <!--------------------------------------------------------------------------------most frequent element in array----------------------------------------------------->
+    <script>
+
+function mostFrequent(arr, n) {
+ 
+ let maxcount = 0;
+ let element_having_max_freq;
+ for (let i = 0; i < n; i++) {
+     var count = 0;
+     for (let j = 0; j < n; j++) {
+         if (arr[i] == arr[j])
+             count++;
+     }
+
+     if (count >= maxcount) {
+         maxcount = count;
+         element_having_max_freq = arr[i];
+     }
+ }
+ console.log(count);
+ return element_having_max_freq;
+}
+
+// Driver Code
+
+let arr = [1,1,2,2,2,3,3,3,3];
+let n = arr.length;
+console.log(mostFrequent(arr, n));
+//------------------------------------------------------------------------------------making function from the  question taken from google----------------------------------//
+       function percent(marksobtain,totalmarks){
+        let percentage = marksobtain / totalmarks * 100;
+       return percentage;
+       
+       }
+       console.log(percent(50,75));
+
+      let percentA=(marksobtain,totalmarks)=>{
+        let percentage = marksobtain / totalmarks * 100;
+       return percentage;
+       
+       }
+       console.log(percentA(50,75))
+
+
+
+    // </script>
+    // <hr>
+    // <script>
+    //     let friends=[4,5,6,7,9,8,8,7]
+    //     let reve=friends.reverse()
+    //     document.write(reve)
+
+    // </script>              
+    // <hr>
+    // <script>
+    //     let numm="10";
+    //     if(typeof(numm)=="number"){
+    //         document.write(numm +" " +"is a number")
+    //     }else{
+    //         document.write(numm +" " +"is not a number")
+    //     }
+    // </script>        
+    // <hr>
+    // <script>
+    //     let side1=10
+    //     let side2=55
+    //     let side3=10
+    //     if(side1==side2&&side1==side3){
+    //         document.write("Its an equilateral triangle")
+    //     }else if(side1==side2||side2==side3||side1==side3){
+    //         document.write("Its an isoscales triangle")
+    //     }else{
+    //         document.write("Its an scales triangle")
+    //     }
+    // </script>       
+    // <hr>
+    // <script>
+    //     let year=2024
+    //     if(year%4==0){
+    //         document.write("Its a Leap year")
+    //     }
+    //     else{
+    //         document.write("Its not a leap year")
+    //     }
+    // </script>    
+    <hr>
+    <script>
+        // let num=prompt("enter a number")
+        // if(num>0){
+        //     document.write(num+" "+ "is positive number")
+        // }else if(num<0){
+        //     document.write(num+" "+ "is negative number")
+        // }else{
+        //     document.write("enter a valid number OR number is zero")
+        //}
+    </script>      
+    <hr>
+    <script>
+    let so=[1,2,3,100,200,300]
+    let yyyy=so.sort((a,b)=>{
+        return a-b
+    })
+document.write(yyyy);
+const aaaa =10 
+console.log(aaaa++); //it will cause an error
+
+    </script>                                                 
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = { name: "nihal verma", age: 25, lang: ["js", "html", "css"] }
+        // // let z=" "  // empty because we will add new value in z 
+        // // for(let y in x){ // y work as value of object
+        // //     z=z+x[y]+"  "
+        // // }
+        // // console.log(z+x['name']+" " +x['age']+" "+ x.lang);
+        // let y=Object.values(x) // this method is used to convert object into array
+        // console.log(y); 
+        // let myobj= null
+        // if(myobj=== undefined){
+        //     console.log("undefined")
+
+        // }else{console.log("null")}
+        let y = x;
+        console.log(y);
+        console.log(x);
+        function name(a, b, c, d) {
+            this.firstname = a,
+                this.lastname = b,
+                this.current_year = c,
+                this.birth_year = d,
+                this.Age = function () {
+                    let Age = this.current_year - this.birth_year
+                    return Age
+                }
+
+        }
+        let employee_name = new name("Nihal", "Verma", 2023, 1999)
+        console.log(employee_name);
+        console.log(employee_name.Age());
+
+    </script>
+
+</body>
+
+</html>

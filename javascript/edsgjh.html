@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello  world</h1>
+    <!-- <script>
+        let data = new Promise((resolved,reject)=>{
+           let x= prompt("enter any number",00)
+           if(x>10){
+            resolved("done the task is executed perfectly")
+           }else(reject("some error occured"))
+            
+        })
+        data.then((item)=>{
+            console.log(item);
+        }).catch((err)=>{
+            console.log("caught an error",err);
+        }).finally((item)=>{
+            console.log("into finally block");
+        }) -->
+    </script>
+    <script>
+        
+//         try{
+//             let h=10
+        
+//         if(hh>100){
+//             console.log(h);
+//         }else{
+//             throw new Error(h + " is smaller than 100")
+//         }
+//     }
+    
+//     finally{console.log("hello");}
+//     console.log("hii");
+//  </script>
+//  <script>
+//    // promise all give result when the last promise is resolved means after 8 sec
+//     let promise= Promise.all([
+//     new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 2 second ")},2000)}),
+//         new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 4 second ")},4000)
+//     }), new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 6 second ")},6000)
+//     }), new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 8 second ")},8000)
+//     })
+//     ])  
+//     promise.then((item)=>{
+//         console.log(item);
+//     }).catch((err)=>{
+//         console.log(err);
+//     }) 
+    
+    
+    
+//      </script>
+//      <script>
+//         //give result and show how many of them is resolved and how many of them rejected
+//          let promise1= Promise.allSettled([
+//     new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 2 second ")},2000)}),
+//         new Promise((resolved,reject)=>{
+//         setTimeout(()=>{reject("done in 4 second ")},4000)   // rejecting this one
+//     }), new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 6 second ")},6000)
+//     }), new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 8 second ")},8000)
+//     })
+//     ])  
+//     promise1.then((item)=>{
+//         console.log(item);
+//     }).catch((err)=>{
+//         console.log(err);
+//     }) 
+//      </script>
+//      <script>
+//         // give result who ever get resolved earlier
+//         let promise2= Promise.race([
+//     new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 10 second ")},10000)}),
+//         new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 4 second ")},4000)   
+//     }), new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 6 second ")},6000)
+//     }), new Promise((resolved,reject)=>{
+//         setTimeout(()=>{resolved("done in 8 second ")},8000)
+//     })
+//     ])  
+//     promise2.then((item)=>{
+//         console.log(item);
+//     }).catch((err)=>{
+//         console.log(err);
+//     }) 
+//      </script>
+     <script>
+        var a=10
+        console.log("line first  ",a); 
+        function fn() {
+            console.log("line 2",a);
+            var a = 20;
+            a++
+            console.log("line3",a);
+            if(a){
+                var a=30
+                a++
+                console.log("line4",a);
+            }
+            console.log("line5",a);
+
+        }
+        fn()
+        console.log("line6",a);
+     </script>
+     <script>
+        let lf="app"
+        var vf="app"
+        console.log("lf",lf,"vf",vf);
+        {
+            let lf="cap"
+            var vf="cap"
+            console.log("lf",lf,"vf",vf)
+        }
+        console.log("lf",lf,"vf",vf)
+     </script>
+     
+
+</body>
+</html>
